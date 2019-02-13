@@ -9,4 +9,3 @@ number = input("Введите число: ")
 for n in range(0, len(number)):
     print(number[n])
 
-
