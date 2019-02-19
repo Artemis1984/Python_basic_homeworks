@@ -32,8 +32,9 @@
 i = 1
 temp_list = []
 apartments = []
-floor = 3
-for a in range(floor + 1):
+block = 5
+spaces = 1
+for a in range(block + 1):
     for b in range(a):
         for c in range(a):
             temp_list.append(i)
@@ -41,13 +42,17 @@ for a in range(floor + 1):
         apartments.append(temp_list)
         temp_list = []
 
-
 for a in range(len(apartments)-1, -1, -1):
+    try:
+        if len(apartments[a]) < len(apartments[a + 1]):
+            spaces += 2
+    except IndexError:
+        pass
+    print(end=" " * spaces)
     for b in range(len(apartments[a])):
-        print(end=" " * (len(apartments) - (len(apartments[a]))**2))
-        print("{:^2}".format(apartments[a][b]), end=" " * len(apartments[a]))
-    print()
 
+        print("{:^2}".format(apartments[a][b]), end="  ")
+    print()
 
 search = int(input("Введите число для поиска комнаты: "))
 
