@@ -15,3 +15,4 @@ for n in range(0, len(number)):
         a = int(number[n])
 
 print(a)
+

@@ -13,3 +13,4 @@ temp = number1
 number1 = number2
 number2 = temp
 print("первое число:", number1, "второе число:", number2)
+
