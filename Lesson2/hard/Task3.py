@@ -32,7 +32,7 @@
 i = 1
 temp_list = []
 apartments = []
-block = 5
+block = 6
 spaces = 1
 for a in range(block + 1):
     for b in range(a):
