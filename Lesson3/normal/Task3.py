@@ -21,3 +21,4 @@ def filtering(a, condition):
 
 filtering(my_list, 4)
 print("После", my_list)
+
