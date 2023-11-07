@@ -4,6 +4,7 @@
     <extensionMap>
       <mapping pattern="Lesson 1" type="PLAIN_TEXT" />
       <mapping ext="crx" type="PLAIN_TEXT" />
+      <mapping ext="pem" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
